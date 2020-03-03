@@ -15,7 +15,8 @@
 	"scripts": {
 		"test": "xo && ava",
 		"build": "swift build --configuration=release -Xswiftc -static-stdlib && mv .build/release/active-win main",
-		"prepublishOnly": "npm run build"
+		"prepublishOnly": "npm run build",
+		"prepare": "npm run build"
 	},
 	"files": [
 		"index.js",
